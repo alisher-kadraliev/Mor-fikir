@@ -1,0 +1,55 @@
+.section {
+
+    // .section__dream
+
+    &__dream {
+        margin-bottom: 30px;
+        background-image: url(../img/dream.jpeg);
+            min-height: 80vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: .3s ease-in-out;
+        position: relative;
+    }
+}
+
+.dream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    
+    @media(max-width: $breakpoint768) {
+        padding-top: 250px;
+    padding-bottom: 250px;
+    }
+    @media(max-width: $breakpoint480) {
+        padding-top: 150px;
+    padding-bottom: 150px;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 60px;
+        width: 759px;
+
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+            font-size: 32px;
+            
+        }
+    }
+
+    // .dream__text
+
+    &__text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

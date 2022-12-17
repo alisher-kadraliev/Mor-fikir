@@ -1,0 +1,65 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1200px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    font-family: 'Playfair Display', serif!important;
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+ .slick{
+  -webkit-transition: opacity 1000s ease-in-out;
+    -moz-transition: opacity 1000s ease-in-out;
+    -ms-transition: opacity 1000s ease-in-out;
+    -o-transition: opacity 1000s ease-in-out;
+     opacity: 1;
+}
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1299px!important;
+}
+
+}
+// .fixed__nav{
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     top: 0;
+    
+//     z-index: 111;
+// }

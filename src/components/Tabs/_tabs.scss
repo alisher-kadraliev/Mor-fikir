@@ -1,0 +1,31 @@
+.tabs {
+    width: 100%;
+    z-index: 11;
+    margin-top: 150px;
+    &__header {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+        &-item {
+            margin: 0 25px;
+            cursor: pointer;
+            // &.active {
+            //     color: red;
+            // }
+        }
+    }
+    &__content {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 75px;
+    }
+}
+.img-video{
+    width: 400px;
+    height: 400px;
+
+}
